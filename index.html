@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <title>Responsive Design</title>
   </head>
   <body>
     <header class="header-container">
-      <img src="images/logo.svg" alt="logo" />
+      <a href="index.html"><img src="images/logo.svg" alt="logo" /></a>
       <div class="navigation">
         <nav>
           <ul class="navigation-lists">
-            <li><a href=""></a>Products</li>
-            <li><a href=""></a>Solutions</li>
-            <li><a href=""></a>Resources</li>
-            <li><a href=""></a>Pricing</li>
-            <li><a href=""></a>Contact</li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Solutions</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">ricing</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
         </nav>
       </div>
       <button class="cta-button">Action</button>
     </header>
+    <!--Hero Section-->
     <section class="hero-section">
       <div class="hero-text">
         <h3 class="hero-heading">Medium length display headline</h3>
@@ -37,7 +39,13 @@
           </p>
         </div>
       </div>
-      <img src="images/hero-image.png" alt="" />
+
+      <picture>
+        <source media="(max-width: 1024px)" srcset="images/tablet-hero.png" />
+        <img src="images/hero-image.png" alt="Hero Image" />
+      </picture>
+
+      <!-- <img src="images/hero-image.png" alt="hero-image" /> -->
     </section>
     <!--Features-->
     <section class="features-container">
@@ -153,7 +161,6 @@
             <li>Fourth</li>
           </ul>
         </div>
-
       </div>
     </footer>
   </body>
